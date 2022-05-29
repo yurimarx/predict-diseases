@@ -29,7 +29,7 @@ $ docker-compose up -d
 
 4. Go to http://localhost:4200 or http://localhost:52773/disease-predictor/index.html to use the Disease Predictor frontend and predict diseases like this:
 
-![Disease-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/screen1.png "Disease Predictor")
+![Disease-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Disease Predictor")
 
 # Credits
 This application used InterSystems IRIS IntegratedML project
