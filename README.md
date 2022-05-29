@@ -1,6 +1,4 @@
 ## About Disease Predictor Application
- [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fglobal-mindmap&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fglobal-mindmap)
-
 This is a Disease Predictor application using InterSystems IntegratedML to Predict diseases (diabetes, etc.)
 
 ## Installation using ZPM
@@ -31,7 +29,7 @@ $ docker-compose up -d
 
 4. Go to http://localhost:4200 or http://localhost:52773/disease-predictor/index.html to use the Disease Predictor frontend and predict diseases like this:
 
-![Mindmap](https://github.com/yurimarx/global-mindmap/raw/main/mindmap.gif "Mindmap")
+![Disease-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/screen1.png "Disease Predictor")
 
 # Credits
 This application used InterSystems IRIS IntegratedML project
