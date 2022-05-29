@@ -1,0 +1,63 @@
+<p-toast [style]="{marginTop: '80px', width: '320px'}"></p-toast>
+
+<div class="p-fluid p-formgrid grid">
+
+    <div class="field col-12 lg:col-12 md:col-12">
+        <p-card header="Predição de Diabetes">
+            <div class="p-fluid p-formgrid grid">
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtname">Idade</label>
+                    <input class="inputfield w-full" id="txtage" type="text" [(ngModel)]="diabetes.age" pInputText placeholder="Idade">
+                </div>
+
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtbp">Pressão Sanguinea</label>
+                    <input class="inputfield w-full" id="txtbp" type="text" [(ngModel)]="diabetes.bloodpressure" pInputText placeholder="Pressão">
+                </div>
+
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtbmi">Massa Corporal</label>
+                    <input class="inputfield w-full" id="txtbmi" type="text" [(ngModel)]="diabetes.bmi" pInputText placeholder="Pressão">
+                </div>
+
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtglucose">Glicose</label>
+                    <input class="inputfield w-full" id="txtglucose" type="text" [(ngModel)]="diabetes.glucose" pInputText placeholder="Glicose">
+                </div>
+
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtinsulin">Insulina</label>
+                    <input class="inputfield w-full" id="txtinsulin" type="text" [(ngModel)]="diabetes.insulin" pInputText placeholder="Insulina">
+                </div>
+
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtskinthickness">Dobra Cutânea Tríceps</label>
+                    <input class="inputfield w-full" id="txtskinthickness" type="text" [(ngModel)]="diabetes.skinthickness" pInputText placeholder="Dobra Cutânea Tríceps">
+                </div>
+
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtdiabetespedigree">Histórico Familiar</label>
+                    <input class="inputfield w-full" id="txtdiabetespedigree" type="text" [(ngModel)]="diabetes.diabetespedigree" pInputText placeholder="Histórico Familiar">
+                </div>
+
+                <div class="field col-12 lg:col-3 md:col-3">
+                    <label for="txtpregnancies">Total Gravidez</label>
+                    <input class="inputfield w-full" id="txtpregnancies" type="text" [(ngModel)]="diabetes.pregnancies" pInputText placeholder="Total de ocorrências de gravidez">
+                </div>
+                
+                <button pButton pRipple type="button" label="Realizar Predição" class="col-12 lg:col-3 md:col-3" (click)="predict()"></button>
+                
+                <div *ngIf="diabetes.PredictedDiabetes !== -1" class="field col-12 lg:col-12 md:col-12">
+                    <h3>{{diabetes.PredictedDiabetes == 0 ? "Baixa chance de diabete": "Grande chance de diabete"}}</h3>
+                </div>
+                
+            </div>
+
+            <br />
+
+
+        </p-card>
+    </div>
+
+</div>
+
