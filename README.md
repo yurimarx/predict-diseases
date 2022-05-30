@@ -26,8 +26,23 @@ $ docker-compose build
 ```
 $ docker-compose up -d 
 ```
+4. Go to Execute Query into Management Portal to train the AI model: http://localhost:52773/csp/sys/exp/%25CSP.UI.Portal.SQL.Home.zen?$NAMESPACE=USER 
 
-4. Go to http://localhost:4200 or http://localhost:52773/disease-predictor/index.html to use the Disease Predictor frontend and predict diseases like this:
+5. Create the VIEW used to train: 
+```
+CREATE VIEW DiabetesTrain AS SELECT Outcome, age, bloodpressure, bmi, diabetespedigree, glucose, insulin, pregnancies, skinthickness FROM dc_data_health.Diabetes
+```
+
+6. Create the AI Model using the view: 
+```
+CREATE MODEL DiabetesModel PREDICTING (Outcome) FROM DiabetesTrain
+```
+7. Train the model:
+```
+TRAIN MODEL DiabetesModel
+```
+
+8. Go to http://localhost:52773/disease-predictor/index.html to use the Disease Predictor frontend and predict diseases like this:
 
 ![Disease-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Disease Predictor")
 
