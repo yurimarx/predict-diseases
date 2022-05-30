@@ -25,7 +25,7 @@ export class DiabetesComponent implements OnInit {
             },
             error => {
                 console.log(error);
-                this.messageService.add({ severity: 'error', summary: 'Erro', detail: 'Erro ao carregar a predição de diabetes.' });
+                this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Error on load the predictions.' });
             }
         );
     }
