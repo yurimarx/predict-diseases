@@ -21,7 +21,7 @@
         Url="/predict-diseases"
         DispatchClass="dc.predict.disease.PredictDiseaseRESTApp"
         MatchRoles=":{$dbrole}"
-        PasswordAuthEnabled="0"
+        PasswordAuthEnabled="1"
         UnauthenticatedEnabled="1"
         Recurse="1"
         UseCookies="2"
