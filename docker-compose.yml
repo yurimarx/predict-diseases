@@ -14,13 +14,13 @@ services:
     volumes:
       - ./:/irisdev/app
       - ./src/csp:/opt/irisapp/src/csp
-  frontend:
-    build:
-      context: ./frontend
-    ports:
-      - "4200:4200"
-    container_name: frontend
-    stdin_open: true
-    volumes:
-       - ./frontend:/usr/src/app/frontend
-       - /usr/src/app/frontend/node_modules
+#  frontend:
+#    build:
+#      context: ./frontend
+#    ports:
+#      - "4200:4200"
+#    container_name: frontend
+#    stdin_open: true
+#    volumes:
+#       - ./frontend:/usr/src/app/frontend
+#       - /usr/src/app/frontend/node_modules
