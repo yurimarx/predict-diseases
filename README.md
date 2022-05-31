@@ -58,9 +58,11 @@ TRAIN MODEL KidneyDiseaseModel
 ```
 
 
-8. Go to http://localhost:52773/disease-predictor/index.html to use the Disease Predictor frontend and predict diseases like this:
+8. Go to http://localhost:52773/disease-predictor/index.html to use the Disease Predictor frontend and predict diseases like these screens:
 
-![Disease-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Disease Predictor")
+![Diabetes-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Diabetes Predictor")
+
+![Kidney-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Kidney Predictor")
 
 # Credits
 This application used InterSystems IRIS IntegratedML project
