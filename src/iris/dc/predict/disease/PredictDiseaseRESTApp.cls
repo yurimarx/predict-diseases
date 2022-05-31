@@ -114,7 +114,7 @@ ClassMethod PredictKidneyDisease() As %Status
       Do rset.%Next()
 
       Set Response = {}
-      Set Response.PredictedKidneyDisease = rset.PredictedKidneyDisease
+      Set Response.classification = rset.PredictedKidneyDisease 
       Set Response.age = rset.age 
       Set Response.al = rset.al 
       Set Response.ane = rset.ane

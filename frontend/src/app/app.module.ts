@@ -104,6 +104,8 @@ import { ConfigService } from './service/app.config.service';
 import { DiabetesComponent } from './diabetes/diabetes.component';
 import { DiabetesService } from './diabetes/diabetesservice';
 import { RequestInterceptor } from './utils/requestinterceptor';
+import { KidneyComponent } from './kidney/kidney.component';
+import { KidneyService } from './kidney/kidneyservice';
 
 @NgModule({
     imports: [
@@ -205,11 +207,12 @@ import { RequestInterceptor } from './utils/requestinterceptor';
         AppMenuitemComponent,
         BlockViewer,
         DiabetesComponent,
+        KidneyComponent,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
         { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },
-        MenuService, ConfigService, DiabetesService,
+        MenuService, ConfigService, DiabetesService, KidneyService
     ],
     bootstrap: [AppComponent]
 })

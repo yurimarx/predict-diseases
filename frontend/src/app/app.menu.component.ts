@@ -29,6 +29,7 @@ export class AppMenuComponent implements OnInit {
                 label: 'Predictions',
                 items: [
                     {label: 'Diabetes', icon: 'pi pi-fw pi-circle', routerLink: ['/diabetes']},
+                    {label: 'Kidney', icon: 'pi pi-fw pi-circle', routerLink: ['/kidney']},
                 ]
             }
         ];
