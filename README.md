@@ -62,7 +62,7 @@ TRAIN MODEL KidneyDiseaseModel
 
 ![Diabetes-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Diabetes Predictor")
 
-![Kidney-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Kidney Predictor")
+![Kidney-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/secondscreen.png "Kidney Predictor")
 
 # Credits
 This application used InterSystems IRIS IntegratedML project
