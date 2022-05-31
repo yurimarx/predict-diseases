@@ -3,126 +3,126 @@
 <div class="p-fluid p-formgrid grid">
 
     <div class="field col-12 lg:col-12 md:col-12">
-        <p-card header="Diabetes Prediction">
+        <p-card header="Kidney Prediction">
             <div class="p-fluid p-formgrid grid">
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtage">Age</label>
                     <input class="inputfield w-full" id="txtage" type="text" [(ngModel)]="kidney.age" pInputText placeholder="Age">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtbp">Blood Pressure</label>
                     <input class="inputfield w-full" id="txtbp" type="text" [(ngModel)]="kidney.bp" pInputText placeholder="Blood Pressure">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtsg">Specific Gravity</label>
                     <input class="inputfield w-full" id="txtsg" type="text" [(ngModel)]="kidney.sg" pInputText placeholder="Specific Gravity">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtal">Albumin</label>
                     <input class="inputfield w-full" id="txtal" type="text" [(ngModel)]="kidney.al" pInputText placeholder="Albumin">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtsu">Sugar</label>
                     <input class="inputfield w-full" id="txtinsu" type="text" [(ngModel)]="kidney.su" pInputText placeholder="Sugar">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
-                    <label for="txtrbc">Red Blood Cells</label>
-                    <input class="inputfield w-full" id="txtrbc" type="text" [(ngModel)]="kidney.rbc" pInputText placeholder="Red Blood Cells">
-                </div>
-
-                <div class="field col-12 lg:col-3 md:col-3">
-                    <label for="txtpc">Pus Cell</label>
-                    <input class="inputfield w-full" id="txtpc" type="text" [(ngModel)]="kidney.pc" pInputText placeholder="Pus Cell">
-                </div>
-
-                <div class="field col-12 lg:col-3 md:col-3">
-                    <label for="txtpcc">Pus Cell Clumps</label>
-                    <input class="inputfield w-full" id="txtpcc" type="text" [(ngModel)]="kidney.pcc" pInputText placeholder="Pus Cell Clumps">
-                </div>
-                
-                <div class="field col-12 lg:col-3 md:col-3">
-                    <label for="txtba">Bacteria</label>
-                    <input class="inputfield w-full" id="txtba" type="text" [(ngModel)]="kidney.ba" pInputText placeholder="Bacteria">
-                </div>
-
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtbgr">Blood Glucose Random</label>
                     <input class="inputfield w-full" id="txtbgr" type="text" [(ngModel)]="kidney.bgr" pInputText placeholder="Blood Glucose Random">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
+                    <label for="txtrbc">Red Blood Cells</label>
+                    <p-dropdown class="inputfield w-full" [options]="normalAbnormalOptions" [(ngModel)]="kidney.rbc" placeholder="Normal/Abnormal" [showClear]="true"></p-dropdown>
+                </div>
+
+                <div class="field col-12 lg:col-2 md:col-2">
+                    <label for="txtpc">Pus Cell</label>
+                    <p-dropdown class="inputfield w-full" [options]="normalAbnormalOptions" [(ngModel)]="kidney.pc" placeholder="Normal/Abnormal" [showClear]="true"></p-dropdown>
+                </div>
+
+                <div class="field col-12 lg:col-2 md:col-2">
+                    <label for="txtpcc">Pus Cell Clumps</label>
+                    <p-dropdown class="inputfield w-full" [options]="presentNotPresentOptions" [(ngModel)]="kidney.pcc" placeholder="Present/Not" [showClear]="true"></p-dropdown>
+                </div>
+                
+                <div class="field col-12 lg:col-2 md:col-2">
+                    <label for="txtba">Bacteria</label>
+                    <p-dropdown class="inputfield w-full" [options]="presentNotPresentOptions" [(ngModel)]="kidney.ba" placeholder="Present/Not" [showClear]="true"></p-dropdown>
+                </div>
+
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtbu">Blood Urea</label>
                     <input class="inputfield w-full" id="txtbu" type="text" [(ngModel)]="kidney.bu" pInputText placeholder="Blood Urea">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtsc">Serum Creatinine</label>
                     <input class="inputfield w-full" id="txtsc" type="text" [(ngModel)]="kidney.sc" pInputText placeholder="Serum Creatinine">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtsod">Sodium</label>
                     <input class="inputfield w-full" id="txtsod" type="text" [(ngModel)]="kidney.sod" pInputText placeholder="Sodium">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtpot">Potassio</label>
                     <input class="inputfield w-full" id="txtpot" type="text" [(ngModel)]="kidney.pot" pInputText placeholder="Potassio">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txthemo">Hemoglobin</label>
                     <input class="inputfield w-full" id="txthemo" type="text" [(ngModel)]="kidney.hemo" pInputText placeholder="Hemoglobin">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtpcv">Packed Cell Volume</label>
                     <input class="inputfield w-full" id="txtpcv" type="text" [(ngModel)]="kidney.pcv" pInputText placeholder="Packed Cell Volume">
                 </div>
                 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtwc">White Blood Cell Count</label>
                     <input class="inputfield w-full" id="txtwc" type="text" [(ngModel)]="kidney.wc" pInputText placeholder="White Blood Cell Count">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtrc">Red blood cell count</label>
                     <input class="inputfield w-full" id="txtrc" type="text" [(ngModel)]="kidney.rc" pInputText placeholder="Red blood cell count">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txthtn">Hypertension</label>
-                    <input class="inputfield w-full" id="txthtn" type="text" [(ngModel)]="kidney.htn" pInputText placeholder="Hypertension">
+                    <p-dropdown class="inputfield w-full" [options]="yesNoOptions" [(ngModel)]="kidney.htn" placeholder="Yes/No" [showClear]="true"></p-dropdown>
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtdm">Diabetes Mellitus</label>
                     <input class="inputfield w-full" id="txtdm" type="text" [(ngModel)]="kidney.dm" pInputText placeholder="Glucose">
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtcad">Coronary Artery Disease</label>
-                    <input class="inputfield w-full" id="txtcad" type="text" [(ngModel)]="kidney.cad" pInputText placeholder="Insulin">
+                    <p-dropdown class="inputfield w-full" [options]="yesNoOptions" [(ngModel)]="kidney.cad" placeholder="Yes/No" [showClear]="true"></p-dropdown>
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtappetite">Appetite</label>
-                    <input class="inputfield w-full" id="txtappetite" type="text" [(ngModel)]="kidney.appet" pInputText placeholder="Skin Thickness">
+                    <p-dropdown class="inputfield w-full" [options]="goodPoorOptions" [(ngModel)]="kidney.appet" placeholder="Good or Poor" [showClear]="true"></p-dropdown>
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtpe">Pedal Edema</label>
-                    <input class="inputfield w-full" id="txtpe" type="text" [(ngModel)]="kidney.pe" pInputText placeholder="Family Background">
+                    <p-dropdown class="inputfield w-full" [options]="yesNoOptions" [(ngModel)]="kidney.pe" placeholder="Yes/No" [showClear]="true"></p-dropdown>
                 </div>
 
-                <div class="field col-12 lg:col-3 md:col-3">
+                <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtane">Anemia</label>
-                    <input class="inputfield w-full" id="txtane" type="text" [(ngModel)]="kidney.ane" pInputText placeholder="Pregnancy Amount">
+                    <p-dropdown class="inputfield w-full" [options]="yesNoOptions" [(ngModel)]="kidney.ane" placeholder="Yes/No" [showClear]="true"></p-dropdown>
                 </div>
 
                 <div class="field col-12 lg:col-3 md:col-3">
