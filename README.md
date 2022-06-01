@@ -1,4 +1,6 @@
 ## About Disease Predictor Application
+[![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fpredict-diseases&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fpredict-diseases)
+
 This is a Disease Predictor application using InterSystems IntegratedML to Predict diseases (diabetes, etc.)
 
 ## Installation using ZPM
