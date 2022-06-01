@@ -38,6 +38,9 @@ CREATE VIEW KidneyDiseaseTrain AS SELECT
 age, al, ane, appet, ba, bgr, bp, bu, cad, classification, dm, hemo, htn, pc, pcc, pcv, pe, pot, rbc, rc, sc, sg, sod, su, wc
 FROM dc_data_health.KidneyDisease
 ```
+```
+CREATE VIEW MaternalRiskTrain AS SELECT BS, BodyTemp, DiastolicBP, HeartRate, RiskLevel, SystolicBP, age FROM dc_data_health.MaternalHealthRisk 
+```
 
 6. Create the AI Models for diabetes and kidney using the views: 
 ```
@@ -46,6 +49,10 @@ CREATE MODEL DiabetesModel PREDICTING (Outcome) FROM DiabetesTrain
 
 ```
 CREATE MODEL KidneyDiseaseModel PREDICTING (classification) FROM KidneyDiseaseTrain
+```
+
+``` 
+CREATE MODEL MaternalRiskModel PREDICTING (RiskLevel) FROM MaternalRiskTrain 
 ```
 
 7. Train the models for diabetes and kidney diseases:
@@ -57,12 +64,17 @@ TRAIN MODEL DiabetesModel
 TRAIN MODEL KidneyDiseaseModel
 ```
 
+```
+TRAIN MODEL MaternalRiskModel 
+```
 
 8. Go to http://localhost:52773/disease-predictor/index.html to use the Disease Predictor frontend and predict diseases like these screens:
 
 ![Diabetes-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/mainscreen.png "Diabetes Predictor")
 
 ![Kidney-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/secondscreen.png "Kidney Predictor")
+
+![Maternal-Risk-Predictor](https://github.com/yurimarx/predict-diseases/raw/master/thirdscreen.png "Maternal Risk Predictor")
 
 # Credits
 This application used InterSystems IRIS IntegratedML project

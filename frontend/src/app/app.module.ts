@@ -106,6 +106,8 @@ import { DiabetesService } from './diabetes/diabetesservice';
 import { RequestInterceptor } from './utils/requestinterceptor';
 import { KidneyComponent } from './kidney/kidney.component';
 import { KidneyService } from './kidney/kidneyservice';
+import { MaternalComponent } from './maternal/maternal.component';
+import { MaternalService } from './maternal/maternalservice';
 
 @NgModule({
     imports: [
@@ -208,11 +210,12 @@ import { KidneyService } from './kidney/kidneyservice';
         BlockViewer,
         DiabetesComponent,
         KidneyComponent,
+        MaternalComponent,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
         { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },
-        MenuService, ConfigService, DiabetesService, KidneyService
+        MenuService, ConfigService, DiabetesService, KidneyService, MaternalService
     ],
     bootstrap: [AppComponent]
 })

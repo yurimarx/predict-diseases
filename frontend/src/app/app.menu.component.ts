@@ -30,6 +30,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     {label: 'Diabetes', icon: 'pi pi-fw pi-circle', routerLink: ['/diabetes']},
                     {label: 'Kidney', icon: 'pi pi-fw pi-circle', routerLink: ['/kidney']},
+                    {label: 'Maternal Risk', icon: 'pi pi-fw pi-circle', routerLink: ['/maternal']},
                 ]
             }
         ];
