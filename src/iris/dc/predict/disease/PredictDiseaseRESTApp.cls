@@ -59,8 +59,9 @@ ClassMethod PredictMaternalRisk() As %Status
       Set Response.BS = rset.BS
       Set Response.BodyTemp = rset.BodyTemp
       Set Response.HeartRate = rset.HeartRate
-
+      
       Write Response.%ToJSON()
+      
       Return 1
       
     } Catch err {

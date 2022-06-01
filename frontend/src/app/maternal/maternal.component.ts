@@ -14,8 +14,8 @@ export class MaternalComponent implements OnInit {
 
     public samples = [
         {PredictedMaternalRisk: "high risk", Age: 25, SystolicBP: 130, DiastolicBP: 80, BS: 15.0, BodyTemp: 98, HeartRate:86},
-        {PredictedMaternalRisk: "mid risk", Age: 23, SystolicBP: 130, DiastolicBP: 70, BS: 15.0, BodyTemp: 98, HeartRate:78},
-        {PredictedMaternalRisk: "low risk", Age: 23, SystolicBP: 90, DiastolicBP: 60, BS: 15.0, BodyTemp: 98, HeartRate:76},
+        {PredictedMaternalRisk: "mid risk", Age: 23, SystolicBP: 130, DiastolicBP: 70, BS: 7.0, BodyTemp: 98, HeartRate:78},
+        {PredictedMaternalRisk: "low risk", Age: 35, SystolicBP: 120, DiastolicBP: 60, BS: 6.1, BodyTemp: 98, HeartRate:76},
     ]
 
     constructor(private maternalService: MaternalService, 

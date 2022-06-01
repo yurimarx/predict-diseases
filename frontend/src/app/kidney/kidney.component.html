@@ -102,7 +102,7 @@
 
                 <div class="field col-12 lg:col-2 md:col-2">
                     <label for="txtdm">Diabetes Mellitus</label>
-                    <input class="inputfield w-full" id="txtdm" type="text" [(ngModel)]="kidney.dm" pInputText placeholder="Glucose">
+                    <p-dropdown class="inputfield w-full" [options]="yesNoOptions" [(ngModel)]="kidney.dm" placeholder="Yes/No" [showClear]="true"></p-dropdown>
                 </div>
 
                 <div class="field col-12 lg:col-2 md:col-2">
